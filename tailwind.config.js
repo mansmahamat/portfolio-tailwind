@@ -13,7 +13,7 @@ module.exports = {
     darkMode: false,
     theme: {
         fontFamily: {
-            header: ['Raleway', "sans-serif"],
+           
             body: ['Open Sans', "sans-serif"],
             logo: ['Playfair Display', "serif"]
         },
