@@ -11,30 +11,21 @@
 
     <title>Mahamat-Salle Mansour</title>
 
-    <meta property="og:title" content="Mahamat-Salle Mansour" />
-
-
-
-    <meta name="Portfolio Mahamat-Salle Mansour
-        content="
-        Frontend Developer based in Montpellier, France" />
+    
+    <meta name="description" content="Mahamat-Salle Mansour Frontend Developer based in Montpellier">
 
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
 
     
 
-    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+   
 
     <link as="style"
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
         rel="preload" />
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+  
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
-        rel="stylesheet">
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
@@ -45,6 +36,15 @@
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJP3MZQT29"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VJP3MZQT29');
+</script>
 
 
 </head>
@@ -64,9 +64,9 @@
             <div class="w-full z-50 top-0 py-3 sm:py-5  absolute  ">
                 <div class="container flex justify-between items-center">
                     <div>
-                        <h4 class="font-logo text-5xl">
+                        <h2 class="font-logo text-5xl">
                             MMS
-                        </h4>
+                        </h2>
                     </div>
                     <div class="hidden lg:block">
                         <ul class="flex items-center">
@@ -126,7 +126,7 @@
                         </ul>
                     </div>
                     <div class="block lg:hidden">
-                        <button @click="$parent.mobileMenu = true"><i
+                        <button aria-label="Center Align" @click="$parent.mobileMenu = true"><i
                                 class='bx bx-menu text-black text-4xl'></i></button>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
             <div class="fixed inset-0 bg-black bg-opacity-70 z-50 min-h-screen lg:hidden transition-opacity opacity-0 pointer-events-none"
                 :class="{ 'opacity-100 pointer-events-auto': $parent.mobileMenu }">
                 <div class="w-2/3 md:w-1/3 bg-black min-h-screen absolute right-0 shadow py-4 px-8">
-                    <button class="absolute top-0 right-0 mt-4 mr-4" @click="$parent.mobileMenu = false">
+                    <button aria-label="Center Align" class="absolute top-0 right-0 mt-4 mr-4" @click="$parent.mobileMenu = false">
                         <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="">
                     </button>
 
@@ -213,11 +213,11 @@
                             <div class="flex flex-col sm:flex-row justify-center lg:justify-start pt-3 sm:pt-5">
                                 <div class="flex justify-center sm:justify-start items-center pl-0 md:pl-1">
                                     
-                                    <h1 class="ml6 hidden sm:block">
+                                    <h2 class="ml6 hidden sm:block">
                                         <span class="text-wrapper">
                                           <span class="letters">Frontend Developer</span>
                                         </span>
-                                      </h1>
+                                      </h2>
                                     
                                 </div>
 
@@ -233,7 +233,7 @@
                         <h2 class="font-header font-semibold text-primary text-4xl sm:text-5xl lg:text-6xl uppercase">
                             About Me</h2>
                         
-                        <p class="font-body text-grey-20 pt-6 leading-relaxed">
+                        <p class="font-body text-white pt-6 leading-relaxed">
                             Hi there 👋 ! My name is Mansour and I am a Frontend Developer 
                              <span class="bg-primary text-black">@WEB^ID</span> <br>  I work remotely
                             but the company is based in Lyon, 
@@ -241,7 +241,7 @@
                             <span class="bg-vue text-black">Vue JS</span>. <br>
                             I work a lot with API's in coordination with backend team
                         </p>
-                        <p class="font-body text-grey-20 pt-6 leading-relaxed">
+                        <p class="font-body text-white pt-6 leading-relaxed">
                             In 2018, I dove full-force into the magnificent world of web development. <br> 
                             After a discover with OpenClassrooms, I started to learning self-taught during 
                             6 months and after that with 2 boot camps of 1 years, I have amassed a lot 
@@ -250,7 +250,7 @@
                         </p>
                         <div class="flex flex-col sm:flex-row justify-center lg:justify-start pt-6">
                             <div class="flex justify-center sm:justify-start items-center">
-                                <p class="font-body font-semibold text-grey-20 text-lg uppercase">
+                                <p class="font-body font-semibold text-primary text-lg uppercase">
                                     Connect with me</p>
                                 <div class="hidden sm:block">
                                     <i class='bx bx-chevron-right text-primary text-2xl'></i>
@@ -258,14 +258,14 @@
                             </div>
                             <div class="flex items-center justify-center sm:justify-start pt-5 sm:pt-0 pl-2">
                           
-                                <a href="https://twitter.com/Mans_Lion" target="_blank" class="pl-4">
+                                <a rel="noopener" href="https://twitter.com/Mans_Lion" target="_blank" class="pl-4">
                                     <i class='bx bxl-twitter text-primary hover:text-yellow text-2xl'></i>
                                 </a>
                            
-                                <a href="https://www.linkedin.com/in/mansour-mahamat-salle-138b73138/" target="_blank" class="pl-4">
+                                <a rel="noopener" href="https://www.linkedin.com/in/mansour-mahamat-salle-138b73138/" target="_blank" class="pl-4">
                                     <i class='bx bxl-linkedin text-primary hover:text-yellow text-2xl'></i>
                                 </a>
-                                <a href="https://github.com/mansmahamat?tab=repositories" target="_blank" class="pl-4">
+                                <a rel="noopener" href="https://github.com/mansmahamat?tab=repositories" target="_blank" class="pl-4">
                                     <i class='bx bxl-github text-primary hover:text-yellow text-2xl'></i>
                                 </a>
                             </div>
@@ -287,16 +287,16 @@
 
                     <div
                         class="w-full sm:w-3/4 lg:w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 pt-12">
-                        <a href="https://football-app-standings.netlify.app/" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
+                        <a rel="noopener" href="https://football-app-standings.netlify.app/" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
                             <img src="/assets/img/screenshot-football-app-standings.netlify.app-2021.07.14-16_36_17.png" class="shadow w-full" alt="portfolio image">
                         </a>
-                        <a href="https://mentor-moi.netlify.app/fr" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
+                        <a rel="noopener" href="https://mentor-moi.netlify.app/fr" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
                             <img src="/assets/img/screenshot-mentor-moi.netlify.app-2021.07.14-16_34_31.png" class="shadow w-full" alt="portfolio image">
                         </a>
-                        <a href="https://monyapp.netlify.app/" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
+                        <a rel="noopener" href="https://monyapp.netlify.app/" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
                             <img src="/assets/img/screenshot-monyapp.netlify.app-2021.07.14-16_35_41.png" class="shadow w-full" alt="portfolio image">
                         </a>
-                        <a href="https://breaking-bad-apis.netlify.app/" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
+                        <a rel="noopener" href="https://breaking-bad-apis.netlify.app/" target="_blank" class="mx-auto md:mx-0 transition-all transform hover:scale-105">
                             <img src="/assets/img/screenshot-breaking-bad-apis.netlify.app-2021.07.16-19_33_31.png" class="shadow w-full" alt="portfolio image">
                         </a>
                     </div>
@@ -540,11 +540,10 @@
                     <h2
                         class="font-header font-semibold text-primary text-4xl sm:text-5xl lg:text-6xl uppercase text-center">
                         I have a little blog</h2>
-                    <h4 class="font-header font-medium text-black text-xl sm:text-2xl lg:text-3xl pt-6 text-center">
-                        Check out my latest posts!</h4>
+                    
                     <div
                         class="w-full sm:w-3/4 lg:w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 xl:gap-10 pt-12">
-                        <a href="https://mahamat-salle-mansour-blog.netlify.app/Cheatsheet-Array-Javascript" target="_blank" class="shadow">
+                        <a rel="noopener" href="https://mahamat-salle-mansour-blog.netlify.app/Cheatsheet-Array-Javascript" target="_blank" class="shadow">
                             <div style="background-image:url(/assets/img/array2.webp);"
                                 class="bg-center bg-cover bg-no-repeat h-72 sm:h-84 lg:h-64 xl:h-72 relative group">
                                 <span
@@ -555,12 +554,12 @@
                             </div>
                             <div class="bg-white py-6 xl:py-8 px-5">
                                 <span class="font-body font-semibold text-lg text-black block">Javascript Array method</span>
-                                <span class="font-body text-grey-20 pt-2 block">Lorem ipsum dolor sit amet, consectetur
+                                <span class="font-body text-black pt-2 block">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                     aliqua.</span>
                             </div>
                         </a>
-                        <a href="https://mahamat-salle-mansour-blog.netlify.app/Node.js-API-Authentication-With-JWT-Tutorial" target="_blank" class="shadow">
+                        <a rel="noopener" href="https://mahamat-salle-mansour-blog.netlify.app/Node.js-API-Authentication-With-JWT-Tutorial" target="_blank" class="shadow">
                             <div style="background-image:url(/assets/img/cover.webp);"
                                 class="bg-center bg-cover bg-no-repeat h-72 sm:h-84 lg:h-64 xl:h-72 relative group">
                                 <span
@@ -572,12 +571,12 @@
                             <div class="bg-white py-6 xl:py-8 px-5">
                                 <span class="font-body font-semibold text-lg text-black block">My
                                     personal productivity </span>
-                                <span class="font-body text-grey-20 pt-2 block">Lorem ipsum dolor sit amet, consectetur
+                                <span class="font-body text-black pt-2 block">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                     .</span>
                             </div>
                         </a>
-                        <a href="https://mahamat-salle-mansour-blog.netlify.app/Send-mail-with-Node-Js" target="_blank" class="shadow">
+                        <a rel="noopener" href="https://mahamat-salle-mansour-blog.netlify.app/Send-mail-with-Node-Js" target="_blank" class="shadow">
                             <div style="background-image:url(/assets/img/nodemailer.webp);"
                                 class="bg-center bg-cover bg-no-repeat h-72 sm:h-84 lg:h-64 xl:h-72 relative group">
                                 <span
@@ -589,7 +588,7 @@
                             <div class="bg-white py-6 xl:py-8 px-5">
                                 <span class="font-body font-semibold text-lg text-black block">My
                                     year in review 2020</span>
-                                <span class="font-body text-grey-20 pt-2 block">Lorem ipsum dolor sit amet, consectetur
+                                <span class="font-body text-black pt-2 block">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                     aliqua.</span>
                             </div>
@@ -605,14 +604,14 @@
                     Feel free to contact me 👇</h2>
                 
                 <div class="w-full sm:w-2/3 mx-auto pt-5 lg:pt-6 text-center">
-                    <a href="mailto:mansour.mahamat.salle@gmail.com" class="font-header  font-medium text-black text-xl sm:text-2xl lg:text-3xl pt-6">
+                    <a rel="noopener" href="mailto:mansour.mahamat.salle@gmail.com" class="font-header  font-medium text-black text-xl sm:text-2xl lg:text-3xl pt-6">
                         mansour.mahamat.salle@gmail.com</a>
                    
                 </div>
 
                 <div class="flex flex-col space-x-28 lg:flex-row pt-16 sm:justify-center">
-                    <a class="twitter-timeline" href="https://twitter.com/Mans_Lion" data-tweet-limit="2" data-width="399" ></a>
-                    <iframe src="https://open.spotify.com/embed/album/6HpMdN52TfJAwVbmkrFeBN" width="40%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <a rel="noopener" class="twitter-timeline" href="https://twitter.com/Mans_Lion" data-tweet-limit="2" data-width="399" ></a>
+                    <iframe title="spotify" src="https://open.spotify.com/embed/album/6HpMdN52TfJAwVbmkrFeBN" width="40%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
 
@@ -629,14 +628,14 @@
                 
                 <div class="flex items-center justify-center sm:justify-start pt-5 sm:pt-0">
                    
-                    <a href="/" class="pl-4">
+                    <a rel="noopener" href="/" class="pl-4">
                         <i class='bx bxl-twitter text-black hover:text-yellow text-2xl'></i>
                     </a>
                     
-                    <a href="/" class="pl-4">
+                    <a rel="noopener" href="/" class="pl-4">
                         <i class='bx bxl-linkedin text-black hover:text-yellow text-2xl'></i>
                     </a>
-                    <a href="/" class="pl-4">
+                    <a rel="noopener" href="/" class="pl-4">
                         <i class='bx bxl-github text-black hover:text-yellow text-2xl'></i>
                     </a>
                 </div>
