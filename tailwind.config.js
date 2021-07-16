@@ -12,11 +12,7 @@ module.exports = {
     },
     darkMode: false,
     theme: {
-        fontFamily: {
-           
-            body: ['Open Sans', "sans-serif"],
-            logo: ['Playfair Display', "serif"]
-        },
+
 
         screens: {
             xs: "375px",
