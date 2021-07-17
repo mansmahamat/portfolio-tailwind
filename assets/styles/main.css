@@ -2,9 +2,6 @@
 @tailwind base;
 @tailwind components;
 
-html {
-    @apply font-body antialiased;
-}
 
   .stack img {
     filter: grayscale();
