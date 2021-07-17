@@ -6,23 +6,6 @@ html {
     @apply font-body antialiased;
 }
 
-#turning { 
-    animation-name: snowRot; 
-    animation-duration: 10s; 
-    animation-iteration-count: infinite; 
-    animation-direction: alternate;
-  }
-
-  @keyframes snowRot{
-    0% {
-      transform: rotateY(0deg);
-    }
-     100% {
-      transform: rotateY(360deg);
-    }
-  }
-
-
   .stack img {
     filter: grayscale();
     transition: filter 0.4s ease-in-out;
